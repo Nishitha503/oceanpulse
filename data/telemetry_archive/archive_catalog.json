@@ -1,0 +1,26 @@
+{
+  "dataset_name": "OceanPulse Sri Lanka EEZ Historical Telemetry & Marine Archives",
+  "spatial_bounding_box": {
+    "min_lat": 4.5,
+    "max_lat": 10.4,
+    "min_lon": 78.6,
+    "max_lon": 83.8
+  },
+  "harbors_monitored": [
+    "Colombo",
+    "Galle",
+    "Hambantota",
+    "Trincomalee",
+    "Mirissa",
+    "Kalpitiya"
+  ],
+  "total_records": 1,
+  "daily_summaries": [
+    {
+      "date": "2026-09-01",
+      "records_logged": 3,
+      "avg_sst": 28.99,
+      "advisory": "ROUGH_SEA_WARNING"
+    }
+  ]
+}

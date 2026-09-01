@@ -1,0 +1,13 @@
+[
+  {
+    "timestamp": "2026-09-01T09:29:38+05:30",
+    "date": "2026-09-01",
+    "cycle": "morning",
+    "mean_sst_c": 28.99,
+    "chlorophyll_mg_m3": 0.551,
+    "wave_height_m": 1.84,
+    "salinity_psu": 35.23,
+    "pfz_confidence": 0.902,
+    "active_fleet_count": 161
+  }
+]
