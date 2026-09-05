@@ -14,7 +14,7 @@
     "Mirissa",
     "Kalpitiya"
   ],
-  "total_records": 11,
+  "total_records": 12,
   "daily_summaries": [
     {
       "date": "2026-09-01",
@@ -38,6 +38,12 @@
       "date": "2026-09-04",
       "records_logged": 2,
       "avg_sst": 28.3,
+      "advisory": "NORMAL"
+    },
+    {
+      "date": "2026-09-05",
+      "records_logged": 3,
+      "avg_sst": 28.69,
       "advisory": "NORMAL"
     }
   ]
