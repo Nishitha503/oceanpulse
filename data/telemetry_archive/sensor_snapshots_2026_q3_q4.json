@@ -922,5 +922,16 @@
     "salinity_psu": 35.1,
     "pfz_confidence": 0.857,
     "active_fleet_count": 194
+  },
+  {
+    "timestamp": "2026-10-03T14:33:20+05:30",
+    "date": "2026-10-03",
+    "cycle": "midday",
+    "mean_sst_c": 28.67,
+    "chlorophyll_mg_m3": 0.63,
+    "wave_height_m": 1.87,
+    "salinity_psu": 35.05,
+    "pfz_confidence": 0.954,
+    "active_fleet_count": 137
   }
 ]
