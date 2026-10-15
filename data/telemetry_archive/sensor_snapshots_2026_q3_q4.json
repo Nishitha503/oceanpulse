@@ -1,16 +1,5 @@
 [
   {
-    "timestamp": "2026-09-03T09:26:48+05:30",
-    "date": "2026-09-03",
-    "cycle": "morning",
-    "mean_sst_c": 27.95,
-    "chlorophyll_mg_m3": 0.604,
-    "wave_height_m": 1.7,
-    "salinity_psu": 35.17,
-    "pfz_confidence": 0.892,
-    "active_fleet_count": 163
-  },
-  {
     "timestamp": "2026-09-03T14:14:46+05:30",
     "date": "2026-09-03",
     "cycle": "midday",
@@ -1098,5 +1087,16 @@
     "salinity_psu": 35.2,
     "pfz_confidence": 0.835,
     "active_fleet_count": 145
+  },
+  {
+    "timestamp": "2026-10-15T09:20:37+05:30",
+    "date": "2026-10-15",
+    "cycle": "morning",
+    "mean_sst_c": 29.03,
+    "chlorophyll_mg_m3": 0.591,
+    "wave_height_m": 1.92,
+    "salinity_psu": 35.29,
+    "pfz_confidence": 0.935,
+    "active_fleet_count": 167
   }
 ]
