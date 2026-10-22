@@ -14,7 +14,7 @@
     "Mirissa",
     "Kalpitiya"
   ],
-  "total_records": 119,
+  "total_records": 120,
   "daily_summaries": [
     {
       "date": "2026-09-01",
@@ -314,6 +314,12 @@
       "date": "2026-10-21",
       "records_logged": 1,
       "avg_sst": 28.52,
+      "advisory": "ROUGH_SEA_WARNING"
+    },
+    {
+      "date": "2026-10-22",
+      "records_logged": 3,
+      "avg_sst": 27.92,
       "advisory": "ROUGH_SEA_WARNING"
     }
   ]
