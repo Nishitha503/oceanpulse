@@ -162,6 +162,12 @@
       "a_star_optimality_ratio": 0.988,
       "pfz_auc_roc": 0.931,
       "fuel_savings_percentage": 17.2
+    },
+    {
+      "eval_date": "2026-10-22",
+      "a_star_optimality_ratio": 0.986,
+      "pfz_auc_roc": 0.949,
+      "fuel_savings_percentage": 16.0
     }
   ]
 }
