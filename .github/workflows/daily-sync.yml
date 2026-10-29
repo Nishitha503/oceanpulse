@@ -1,0 +1,68 @@
+name: Daily Marine Telemetry Sync & Contribution Workflow
+
+on:
+  schedule:
+    # Runs everyday at 04:30 UTC (10:00 AM Sri Lanka Standard Time)
+    - cron: '30 4 * * *'
+  workflow_dispatch: # Allows manual trigger anytime from GitHub Actions tab
+
+permissions:
+  contents: write
+
+jobs:
+  telemetry-sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Update Daily Marine Bulletin & Telemetry
+        run: |
+          python - << 'EOF'
+          import json
+          from datetime import datetime, timezone, timedelta
+
+          tz_sl = timezone(timedelta(hours=5, minutes=30))
+          now_sl = datetime.now(tz_sl)
+          today_str = now_sl.strftime("%Y-%m-%d")
+          iso_str = now_sl.isoformat()
+
+          bulletin_path = "data/daily_ocean_bulletin.json"
+          try:
+              with open(bulletin_path, "r", encoding="utf-8") as f:
+                  data = json.load(f)
+          except Exception:
+              data = {}
+
+          data["status"] = "OPERATIONAL"
+          data["last_telemetry_sync"] = iso_str
+          data["bulletin_date"] = today_str
+          data["system"] = "OceanPulse - Sri Lanka EEZ Marine Telemetry Engine"
+          data["eez_coverage"] = "4.5°N - 10.4°N, 78.6°E - 83.8°E"
+
+          with open(bulletin_path, "w", encoding="utf-8") as f:
+              json.dump(data, f, indent=2, ensure_ascii=False)
+
+          print(f"Updated ocean bulletin for date: {today_str}")
+          EOF
+
+      - name: Commit and Push Daily Telemetry Update
+        run: |
+          git config --global user.name "Nishitha"
+          git config --global user.email "nishithadealwis5@gmail.com"
+          git add data/daily_ocean_bulletin.json
+          
+          # Check if there are changes to commit
+          if git diff --staged --quiet; then
+            echo "No changes detected."
+          else
+            git commit -m "chore(telemetry): sync marine bulletin for $(date +'%Y-%m-%d') [automated-streak]"
+            git push origin main
+          fi
