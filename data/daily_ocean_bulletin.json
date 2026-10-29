@@ -2,12 +2,31 @@
   "system": "OceanPulse - Sri Lanka EEZ Marine Telemetry Engine",
   "status": "OPERATIONAL",
   "eez_coverage": "4.5°N - 10.4°N, 78.6°E - 83.8°E",
-  "last_telemetry_sync": "2026-10-29T11:00:00+05:30",
+  "last_telemetry_sync": "2026-10-29T11:24:13.858405+05:30",
   "active_pfz_clusters": 5,
   "buoy_stations": [
-    { "id": "BUOY_BERUWALA_01", "lat": 6.43, "lon": 79.85, "sst_celsius": 29.4, "status": "ONLINE" },
-    { "id": "BUOY_GALLE_02", "lat": 5.95, "lon": 80.20, "sst_celsius": 29.1, "status": "ONLINE" },
-    { "id": "BUOY_TRINCO_03", "lat": 8.58, "lon": 81.35, "sst_celsius": 28.8, "status": "ONLINE" }
+    {
+      "id": "BUOY_BERUWALA_01",
+      "lat": 6.43,
+      "lon": 79.85,
+      "sst_celsius": 29.4,
+      "status": "ONLINE"
+    },
+    {
+      "id": "BUOY_GALLE_02",
+      "lat": 5.95,
+      "lon": 80.2,
+      "sst_celsius": 29.1,
+      "status": "ONLINE"
+    },
+    {
+      "id": "BUOY_TRINCO_03",
+      "lat": 8.58,
+      "lon": 81.35,
+      "sst_celsius": 28.8,
+      "status": "ONLINE"
+    }
   ],
-  "marine_weather_summary": "Southwest monsoon transition, moderate swell 1.4m - 1.8m in western offshore zone."
+  "marine_weather_summary": "Southwest monsoon transition, moderate swell 1.4m - 1.8m in western offshore zone.",
+  "bulletin_date": "2026-10-29"
 }
