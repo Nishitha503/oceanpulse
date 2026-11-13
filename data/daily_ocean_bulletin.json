@@ -2,7 +2,7 @@
   "system": "OceanPulse - Sri Lanka EEZ Marine Telemetry Engine",
   "status": "OPERATIONAL",
   "eez_coverage": "4.5°N - 10.4°N, 78.6°E - 83.8°E",
-  "last_telemetry_sync": "2026-11-13T16:54:15.055378+05:30",
+  "last_telemetry_sync": "2026-11-14T02:06:40.116224+05:30",
   "active_pfz_clusters": 5,
   "buoy_stations": [
     {
@@ -28,13 +28,13 @@
     }
   ],
   "marine_weather_summary": "Southwest monsoon transition, moderate swell 1.4m - 1.8m in western offshore zone.",
-  "bulletin_date": "2026-11-13",
-  "telemetry_cycle": "SLST 16:54:15 Observation Cycle",
+  "bulletin_date": "2026-11-14",
+  "telemetry_cycle": "SLST 02:06:40 Observation Cycle",
   "marine_metrics": {
-    "mean_sst_celsius": 28.37,
-    "avg_wave_height_m": 1.67,
-    "wind_speed_knots": 12.9,
-    "active_vessels_monitored": 173,
+    "mean_sst_celsius": 28.02,
+    "avg_wave_height_m": 1.17,
+    "wind_speed_knots": 11.7,
+    "active_vessels_monitored": 165,
     "pfz_hotspots_detected": 4
   }
 }
